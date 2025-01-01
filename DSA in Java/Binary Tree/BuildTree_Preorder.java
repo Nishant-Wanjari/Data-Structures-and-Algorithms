@@ -5,6 +5,8 @@ public class BuildTree_Preorder {
 
         Node root = BinaryTree.buildTree(nodes);
         System.out.println("Root Node Data : " + root.data);
+        BinaryTree.preorder(root);
+        BinaryTree.inorder(root);
     }
 
     static class Node{
@@ -21,6 +23,7 @@ public class BuildTree_Preorder {
 
     static class BinaryTree{
         static int index = -1;
+        //TC - O(n)
         public static Node buildTree(int nodes[]){
             index ++;
 
@@ -33,6 +36,27 @@ public class BuildTree_Preorder {
             newNode.right = buildTree(nodes);
 
             return newNode;
+        }
+        //TC - O(n) 
+        public static void preorder(Node root){
+            if(root==null){
+                System.out.println(" -1 ");
+                return;
+            }
+            System.out.println(root.data+" ");
+            preorder(root.left);
+            preorder(root.right);
+        }
+
+        //TC - O(n) 
+        public static void inorder(Node root){
+            if(root==null){
+                System.out.println(" -1 ");
+                return;
+            }
+            inorder(root.left);
+            System.out.println(root.data+" ");
+            inorder(root.right);
         }
     }
     
