@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+public class Strings_004_Substring {
 
     public static void main(String args[]) {
         // Calling the custom Substring method with startIndex 0 and endIndex 5
