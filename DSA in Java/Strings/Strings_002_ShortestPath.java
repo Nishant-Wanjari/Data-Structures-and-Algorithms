@@ -1,4 +1,4 @@
-public class Strings_02_ShortestPath {
+public class Strings_002_ShortestPath {
      
    public static void shortestPath(String string){
        int x = 0;

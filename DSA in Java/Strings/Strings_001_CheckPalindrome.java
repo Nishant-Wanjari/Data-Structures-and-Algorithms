@@ -1,4 +1,4 @@
-public class Strings_01_CheckPalindrome {
+public class Strings_001_CheckPalindrome {
     
     public static boolean checkPalindrome(String string){
         for (int i = 0; i < string.length()/2; i++){
