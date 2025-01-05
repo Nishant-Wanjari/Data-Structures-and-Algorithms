@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main{
+public class Strings_00_Introduction{
     public static void main(String args[]){
         
         // Strings are IMMUTABLE;
