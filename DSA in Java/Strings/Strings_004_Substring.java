@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class Strings_004_Substring {
 
     public static void main(String args[]) {
